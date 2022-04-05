@@ -8,6 +8,7 @@ import Camera from "../screen/CameraScreen"
 // import { NavigationContainer } from "@react-navigation/native";
 
 const Tab = createMaterialTopTabNavigator()
+const styles = StyleSheet.create({})
 
 const HomeScreen = ({navigation}) => {
     useLayoutEffect(() => {
@@ -39,5 +40,3 @@ const HomeScreen = ({navigation}) => {
 }
 
 export default HomeScreen
-
-const styles = StyleSheet.create({})

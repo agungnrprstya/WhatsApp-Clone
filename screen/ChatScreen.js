@@ -8,9 +8,19 @@ function Chat({ navigation }) {
           <TouchableOpacity onPress={() => navigation.navigate('DalemScreen')}>
             <List.Item
               title="Unkown"
+              titleStyle={{color: 'black'}}
               description="Woy"
-              left={props => <Avatar.Image {...props} source={require('../assets/kartun2.jpg')}
-              />}
+              descriptionStyle={{color: 'black'}}
+              left={props => <Avatar.Image {...props} source={require('../assets/kartun2.jpg')}/>}
+            />
+          </TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate('DalemScreen')}>
+            <List.Item
+              title="Unkown"
+              titleStyle={{color: 'red'}}
+              description="Woy"
+              descriptionStyle={{color: 'red'}}
+              left={props => <Avatar.Image {...props} source={require('../assets/kartun2.jpg')}/>}
             />
           </TouchableOpacity>
         </View>

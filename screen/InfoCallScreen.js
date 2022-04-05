@@ -3,7 +3,7 @@ import { Appbar, Text } from 'react-native-paper';
 
 
 
-function DalemScreen({ navigation }) {
+function InfoCallScreen({ navigation }) {
     return (
         <>
             <Appbar.Header>
@@ -17,4 +17,4 @@ function DalemScreen({ navigation }) {
     );
 }
 
-export default DalemScreen;
+export default InfoCallScreen;

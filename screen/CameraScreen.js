@@ -1,10 +1,10 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
-const Camera = () => {
+const Camera = (navigation) => {
     return (
         <View>
-            <Text>MMK</Text>
+            <Text style={{textAlign:"center", fontSize:100, paddingTop:200}}>Camera Screen</Text>
         </View>
     )
 }

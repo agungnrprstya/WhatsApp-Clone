@@ -6,12 +6,22 @@
 // import HomeScreen from './screen/HomeScreen';
 // import DalemScreen from './screen/DalemScreen';
 import * as React from "react";
-import { Provider as PaperProvider } from "react-native-paper";
+import { DefaultTheme, Provider as PaperProvider } from "react-native-paper";
 import Navigation from "./Navigation";
+
+
+const theme = {
+    ...DefaultTheme,
+    roundness:2,
+    colors:{
+        ...DefaultTheme.colors,
+        primary:'#075E54'
+    },
+};
 
 export default function App() {
     return (
-        <PaperProvider>
+        <PaperProvider theme={theme}>
             <Navigation/>
         </PaperProvider>
     );

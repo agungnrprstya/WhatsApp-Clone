@@ -1,14 +1,12 @@
-import React from 'react';
-import { Appbar, Text } from 'react-native-paper';
+import React from 'react'
+import { Appbar, Text, View } from 'react-native-paper'
 
-
-
-function InfoCallScreen({ navigation }) {
+function Setting({ navigation }) {
     return (
         <>
             <Appbar.Header>
                 <Appbar.BackAction onPress={() => navigation.goBack()} />
-                <Appbar.Content title="Unkown" />
+                <Appbar.Content title="Setting" />
                 <Appbar.Action icon="phone" />
                 <Appbar.Action icon="video" />
                 <Appbar.Action icon="dots-vertical" onPress={() => { }} />
@@ -17,4 +15,4 @@ function InfoCallScreen({ navigation }) {
     );
 }
 
-export default InfoCallScreen;
+export default Setting

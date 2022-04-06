@@ -3,12 +3,12 @@ import { Appbar, Text } from 'react-native-paper';
 
 
 
-function DalemScreen({ navigation }) {
+function InfoCall({ navigation }) {
     return (
         <>
             <Appbar.Header>
                 <Appbar.BackAction onPress={() => navigation.goBack()} />
-                <Appbar.Content title="Unkown" />
+                <Appbar.Content title="Info" />
                 <Appbar.Action icon="phone" />
                 <Appbar.Action icon="video" />
                 <Appbar.Action icon="dots-vertical" onPress={() => { }} />
@@ -17,4 +17,4 @@ function DalemScreen({ navigation }) {
     );
 }
 
-export default DalemScreen;
+export default InfoCall;

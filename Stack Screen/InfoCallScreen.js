@@ -29,8 +29,8 @@ function InfoScreen({ navigation }) {
             <Appbar.Header style={{ backgroundColor: '#075E54' }}>
                 <Appbar.BackAction onPress={() => navigation.goBack()} />
                 <Appbar.Content title="Info Panggilan" />
-                <Appbar.Action icon="message" />
-                <Appbar.Action icon="dots-vertical" onPress={() => { }} />
+                <Appbar.Action icon="message" onPress={() => navigation.navigate('Chat2')}/>
+                <Appbar.Action icon="dots-vertical" />
             </Appbar.Header>
             <View>
                 <List.Item
@@ -39,7 +39,7 @@ function InfoScreen({ navigation }) {
                     description="Ada"
                     left={props => <Avatar.Image {...props} source={require('../assets/rahmatK.jpg')} />}
                     right={props => <><List.Icon {...props} icon="phone" color='green' />
-                        <List.Icon {...props} icon="video" color='green' /> </>} />
+                <List.Icon {...props} icon="video" color='green' /> </>} />
                 <Text style={{ marginLeft: 90, borderTopWidth: 1 }}></Text>
                 <Text style={{ marginLeft: 86, marginTop:10 }}> Hari ini</Text>
                 <List.Item

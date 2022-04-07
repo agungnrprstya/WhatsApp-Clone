@@ -12,7 +12,7 @@ function Contact({ navigation }) {
                 <MaterialIcons name="search" size={24} color="white" />
                 <Appbar.Action icon="dots-vertical" onPress={() => { }} />
             </Appbar.Header>
-            <View>
+            <View style={{backgroundColor:'#f2f2f2'}}>
                 <List.Item
                     title="Grup Baru"
                     titleStyle={styles.title1}
@@ -30,27 +30,25 @@ function Contact({ navigation }) {
                     left={props => <Avatar.Image {...props} source={require('../assets/badboy.jpg')} />} />
                 </TouchableOpacity>
                 <List.Item
+                    title="Ayang 1"
+                    titleStyle={styles.title2}                    
+                    description="Agung🖤"
+                    left={props => <Avatar.Image {...props} source={require('../assets/ryujin.jpg')} />} />
+                <List.Item
+                    title="Ayang 2"
+                    titleStyle={styles.title2}                    
+                    description="I Feel Free"
+                    left={props => <Avatar.Image {...props} source={require('../assets/lisa.jpg')} />} />
+                <List.Item
+                    title="Ayang 3"
+                    titleStyle={styles.title2}                    
+                    description="Sibuk"
+                    left={props => <Avatar.Image {...props} source={require('../assets/han.jpg')} />} />
+                <List.Item
                     title="Bagas"
                     titleStyle={styles.title2}                    
                     description="2022 Tamat Basara"
                     left={props => <Avatar.Image {...props} source={require('../assets/BagasK.jpg')} />} />
-                <List.Item
-                    title="Zulham"
-                    titleStyle={styles.title2}                    
-                    description="Blender is my life!"
-                    left={props => <Avatar.Image {...props} source={require('../assets/zulhamK.jpg')} />} />
-                <List.Item
-                    title="Rifqi"
-                    titleStyle={styles.title2}                    
-                    description="Galau Banget!"
-                    left={props => <Avatar.Image {...props} source={require('../assets/RifkiK.jpg')} />} />
-                <TouchableOpacity onPress={() => navigation.navigate('Chat2')}>
-                <List.Item
-                    title="Rahmat Zainul"
-                    titleStyle={styles.title2}                    
-                    description="Berdoa Aja"
-                    left={props => <Avatar.Image {...props} source={require('../assets/rahmatK.jpg')} />} />
-                </TouchableOpacity>
                 <TouchableOpacity onPress={() => navigation.navigate('Chat1')}>
                 <List.Item 
                     title="Denny"
@@ -59,6 +57,23 @@ function Contact({ navigation }) {
                     left={props => <Avatar.Image {...props} source={require('../assets/ye.jpg')} />} 
                     />
                 </TouchableOpacity>
+                <TouchableOpacity onPress={() => navigation.navigate('Chat2')}>
+                <List.Item
+                    title="Rahmat Zainul"
+                    titleStyle={styles.title2}                    
+                    description="Berdoa Aja"
+                    left={props => <Avatar.Image {...props} source={require('../assets/rahmatK.jpg')} />} />
+                </TouchableOpacity>
+                <List.Item
+                    title="Rifqi"
+                    titleStyle={styles.title2}                    
+                    description="Galau Banget!"
+                    left={props => <Avatar.Image {...props} source={require('../assets/RifkiK.jpg')} />} />
+                <List.Item
+                    title="Zulham"
+                    titleStyle={styles.title2}                    
+                    description="Blender is my life!"
+                    left={props => <Avatar.Image {...props} source={require('../assets/zulhamK.jpg')} />} />
             </View>
         </>
     );

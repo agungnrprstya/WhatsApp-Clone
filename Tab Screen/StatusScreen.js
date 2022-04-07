@@ -35,7 +35,7 @@ return (
             />
 
             <List.Item
-              title="Iboy"
+              title="Ayang 1"
               titleStyle={styles.title}
               description="Hari ini, 16:05"
               descriptionStyle={{color: 'black', marginLeft:-10}}

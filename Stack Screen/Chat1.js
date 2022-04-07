@@ -3,7 +3,6 @@ import { StyleSheet, ImageBackground, TouchableOpacity } from 'react-native';
 import { TextInput, Appbar, Text, Avatar } from 'react-native-paper';
 import { View } from 'react-native';
 import MaterialIcons from "react-native-vector-icons/MaterialIcons";
-import HomeScreen from './HomeScreen';
 // import { loremIpsum } from 'react-lorem-ipsum';
 
 function Chat1({navigation}) {
